@@ -1,0 +1,211 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Turn the horizontal rules into dotted line breaks */
+hr {
+  border-style: dotted;
+  border-width: 6px;
+  border-color: darkgray;
+  border-bottom: none;
+  margin: 60px auto;
+  width: 5%;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', serif;
+  color: #11999E;
+  margin-bottom: 0;
+}
+
+.nav-wrapper {
+     display: flex; /*Flex makes the class go side by side instead of overlapping */
+     justify-content: space-between; /*Space makes a line of space between the classes in the wrapping */
+     padding: 20px; /* Padding provides some border spacing inwards */
+     background-color: lightgray;
+}
+
+.left-wrapper {
+     display: flex;
+}
+
+/* Traverse through the wrapping class then go to the left-side class and apply style to all divs */
+.nav-wrapper > .left-wrapper > div {
+     margin-right: 20px; /* Margin size */
+     font-size: 1em; /* Font size is percentage of orginal (em) */
+}
+
+.link-wrapper {
+     height: 22px;
+     border-bottom: 1px solid transparent;
+     transition: border-bottom 0.5s;
+     font-family: 'Merriweather', serif;
+}
+
+/* In the link wrapper lets grab the a-tag */
+.link-wrapper a {
+     color: #162447;
+     text-decoration: none;
+     transition: color 0.5s;
+}
+
+/* CSS pseudo state: check for hover on link*/
+.link-wrapper:hover {
+     border-bottom: 1px solid black;
+}
+
+.link-wrapper a:hover {
+     color: black;
+}
+
+.nav-wrapper > .right-wrapper > .name-wrapper {
+     text-transform: uppercase;
+     font-size: 18px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.math-image {
+  height: 100%;
+  width: 100%;
+}
+
+.main-wrapper {
+  border: 3px solid black;
+}
+
+.background-header {
+  /* The image used */
+  background-image: url("photographer.jpg");
+
+  /* Add the blur effect */
+  filter: blur(6px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-wrapper {
+  position: relative;
+}
+
+/* Position text in the middle of the page/image */
+.text-header {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4); /* Black see-through */
+  color: white;
+  font-weight: bold;
+  border: 2px solid #f1f1f1;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+}
+
+.about, .course, .research, .personal{
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Montserrat', serif;
+  color: #11999E;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: 'Montserrat', serif;
+  color: black;
+}
+
+.description {
+  width: 50%;
+  margin: 50px auto;
+  text-align: left;
+  font-family: 'Merriweather', serif;
+  line-height: 2;
+}
+
+.prof-dunbar {
+  float: left;
+  margin-right: 20px;
+}
+
+.course-list{
+    list-style-position: inside;
+    text-align: center;
+}
+.course-list li{
+    margin: 1em 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+  }
+
+.sidebar {
+  height: 100%; /* Full-height: */
+  width: 400px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 1; /* Stay at the top */
+  right: 0;
+  background-color: #f4f6ff; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  text-align: center;
+}
+
+.main {
+  margin-right: 400px;
+  padding: 0 15px;
+}
+
+
+.research-info{
+  width: 50%;
+  margin: 40px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.icon {
+  width: 20%;
+  margin-right: 30px;
+  float: left;
+}
+
+.dog {
+  width: 20%;
+  margin-left: 30px;
+  float: right;
+}
+
+.research-section {
+  width: 70%;
+  margin: 20px auto;
+  text-align: left;
+  font-family: 'Merriweather', serif;
+  line-height: 2;
+}
+
+.personal-section {
+  width: 55%;
+  margin: 20px auto;
+  text-align: left;
+  font-family: 'Merriweather', serif;
+  line-height: 2;
+}
+
+.foot-wrapper {
+  margin-top: 50px;
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
