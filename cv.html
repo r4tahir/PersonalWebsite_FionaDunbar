@@ -6,6 +6,8 @@
   <title>Professor Dunbar's CV</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
+  <script src = "script.js"></script>
 </head>
 
 <body>
@@ -46,16 +48,19 @@
 
 <!-- Education section-->
     <div class="main">
-      <h1>Education</h1>
+      <h2><u>Education</u></h2>
+        
 
       <p>
-        <b>To give an overview of Fiona Dunbar's CV, we'll start with her long experience at the University of Waterloo and Wilfrid Laurier University.</b>  
+        To give an overview of Fiona Dunbar's CV, we'll start with her long experience at the University of Waterloo and Wilfrid Laurier University. 
       </p>
       <img src="uw_wlu_logos-4.png" width="1000" height="240"
        title = "Fiona Dunbar's Personal CV" align = "middle"/>
+
+       <button onclick = "revealMessage()"><b><i>LEARN MORE</i></b></button>
    
-     <p>
-       <br><br>
+       <p id ="hiddenMessage" style="display:none">
+       
       Fiona Dunbar graduated from Wilfrid Laurier class of 2001, graduating at the top of her class and earning a Gold Medal in Mathematics. 
        
       She then continued to get a Master in Mathematics from the University of Waterloo, Combinatorics and Optomization with a specialization in Cryptography. Needless to say, professor Dunbar has had plenty affiliation with the Universities even before pursuing the role of lecturer.
@@ -64,21 +69,20 @@
 
 <!-- Work Experience-->
 <div class="main">
-  <h1>Work Experience</h1>
-
+  <h2><u>Work Experience</u></h2>
   <p>
-    <b>Fiona Dunbar has had a vast experience as a dynamic lecturer, approaching 20 years in delivering education to students from around the world.</b>
+    Fiona Dunbar has had a vast experience as a dynamic lecturer, approaching 20 years in delivering education to students from around the world.
   </p>
-  <img src="dunbar.jpg" width="500" height="240"
+  <img src="dunbar.jpg" width="400" height="240"
    title = "Fiona Dunbar's Personal CV" align = "left"/>
+   <button onclick = "revealMessage2()"><b><i>LEARN MORE</i></b></button>
 
- <p>
+<p id = "hiddenMessage2" style = "display:none">
 
    Fiona Dunbar started her career as an instructor at Wilfrid Laurier University where she was a math instructor for almost 3 years. 
    Then in 2005, she began working as a lecturer for the University of Waterloo where she continues to work till this day.
    <br> <br>
-   She mainly teaches classes revolving around the theories and application of concepts from Calculus and Vectors, 
-   as seen from her skills shown throughout undergrad and the pursuing of her masters degree.
+   She mainly teaches classes revolving around the theories and application of concepts from Calculus and Vectors, as seen from her skills shown throughout undergrad and the pursuing of her masters.
  </p>
 </div>
 
