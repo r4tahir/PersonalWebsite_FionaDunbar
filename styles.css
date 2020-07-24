@@ -7,10 +7,14 @@ body {
 hr {
   border-style: dotted;
   border-width: 6px;
-  border-color: darkgray;
+  border-color: #FFF;
   border-bottom: none;
   margin: 60px auto;
   width: 5%;
+}
+
+h2 {
+  font-weight: bolder;
 }
 
 h4 {
@@ -20,50 +24,33 @@ h4 {
   margin-bottom: 0;
 }
 
-.nav-wrapper {
-     display: flex; /*Flex makes the class go side by side instead of overlapping */
-     justify-content: space-between; /*Space makes a line of space between the classes in the wrapping */
-     padding: 20px; /* Padding provides some border spacing inwards */
-     background-color: lightgray;
+/* Navigation Bar */
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0;
 }
 
-.left-wrapper {
-     display: flex;
+.nav-item {
+  padding: 0 15px;
 }
 
-/* Traverse through the wrapping class then go to the left-side class and apply style to all divs */
-.nav-wrapper > .left-wrapper > div {
-     margin-right: 20px; /* Margin size */
-     font-size: 1em; /* Font size is percentage of orginal (em) */
+.nav-link {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
 }
 
-.link-wrapper {
-     height: 22px;
-     border-bottom: 1px solid transparent;
-     transition: border-bottom 0.5s;
-     font-family: 'Merriweather', serif;
+.navbar {
+  margin-bottom: 20px;
 }
 
-/* In the link wrapper lets grab the a-tag */
-.link-wrapper a {
-     color: #162447;
-     text-decoration: none;
-     transition: color 0.5s;
-}
+/* Title image screen */
 
-/* CSS pseudo state: check for hover on link*/
-.link-wrapper:hover {
-     border-bottom: 1px solid black;
-}
-
-.link-wrapper a:hover {
-     color: black;
-}
-
-.nav-wrapper > .right-wrapper > .name-wrapper {
-     text-transform: uppercase;
-     font-size: 18px;
-     font-family: 'Montserrat', sans-serif;
+.title {
+  padding: 2.5% 7%;
+  background-color: #c2b9b0;
 }
 
 .math-image {
@@ -102,6 +89,7 @@ h4 {
   background-color: rgba(0,0,0, 0.4); /* Black see-through */
   color: white;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
   border: 2px solid #f1f1f1;
   position: absolute;
   top:50%;
@@ -113,6 +101,12 @@ h4 {
   text-align: center;
 }
 
+/* Main information and summary texts */
+.info-wrapper {
+  padding: 2.5% 7%;
+  background-color: #FFA07A;
+}
+
 .about, .course, .research, .personal{
   text-align: center;
   font-size: 2rem;
@@ -120,62 +114,36 @@ h4 {
   color: #11999E;
 }
 
-.copyright {
-  text-align: center;
-  font-size: 0.75rem;
-  font-family: 'Montserrat', serif;
-  color: black;
-}
-
+/* Content in summary */
 .description {
-  width: 50%;
+  width: 60%;
   margin: 50px auto;
   text-align: left;
   font-family: 'Merriweather', serif;
   line-height: 2;
 }
 
+/* Professor Dunbar image */
 .prof-dunbar {
   float: left;
   margin-right: 20px;
 }
 
-.course-list{
-    list-style-position: inside;
-    text-align: center;
+/* course list content  */
+dt {
+  margin: 1% auto 0;
 }
-.course-list li{
-    margin: 1em 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
+
+dd {
+  margin: auto;
+  padding: 1%;
+  width: 60%;
+}
+.course-list {
+    text-align: center;
   }
 
-.sidebar {
-  height: 100%; /* Full-height: */
-  width: 400px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 1; /* Stay at the top */
-  right: 0;
-  background-color: #f4f6ff; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-  text-align: center;
-}
-
-.main {
-  margin-right: 400px;
-  padding: 0 15px;
-}
-
-
-.research-info{
-  width: 50%;
-  margin: 40px auto;
-  text-align: left;
-  line-height: 2;
-}
-
+/* Images for content in info-wrapper  */
 .icon {
   width: 20%;
   margin-right: 30px;
@@ -188,24 +156,58 @@ h4 {
   float: right;
 }
 
+/* Research section content  */
 .research-section {
-  width: 70%;
+  margin: 20px auto;
+  text-align: left;
+  font-family: 'Merriweather', serif;
+  line-height: 2;
+}
+.research-info{
+  width: 60%;
+  margin: 40px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.personal-info {
+  width: 60%;
   margin: 20px auto;
   text-align: left;
   font-family: 'Merriweather', serif;
   line-height: 2;
 }
 
-.personal-section {
-  width: 55%;
-  margin: 20px auto;
-  text-align: left;
-  font-family: 'Merriweather', serif;
-  line-height: 2;
-}
-
+/* footer section */
 .foot-wrapper {
-  margin-top: 50px;
   background-color: #66BFBF;
-  padding: 50px 0 20px;
+  text-align: center;
+  padding: 20px 0 12px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: 'Montserrat', serif;
+  color: black;
+}
+
+.ico {
+  color: #292b2c;
+  margin: 0 1rem 10px;
+}
+
+
+/* ************CV************** */
+.sidebar {
+  height: 100%; /* Full-height: */
+  width: 400px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 1; /* Stay at the top */
+  right: 0;
+  background-color: #f4f6ff; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  text-align: center;
 }
