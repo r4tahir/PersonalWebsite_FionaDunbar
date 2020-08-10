@@ -1,16 +1,7 @@
 body {
   height: 100%;
   margin: 0;
-}
-
-/* Turn the horizontal rules into dotted line breaks */
-hr {
-  border-style: dotted;
-  border-width: 6px;
-  border-color: #FFF;
-  border-bottom: none;
-  margin: 60px auto;
-  width: 5%;
+  background-color: #f7f7f7;
 }
 
 h2 {
@@ -50,7 +41,7 @@ h4 {
 
 .title {
   padding: 2.5% 7%;
-  background-color: #c2b9b0;
+  background-color: #cFFFFE;
 }
 
 .math-image {
@@ -85,7 +76,7 @@ h4 {
 
 /* Position text in the middle of the page/image */
 .text-header {
-  background-color: rgb(0,0,0);
+  background-color: #CFFFFE;
   background-color: rgba(0,0,0, 0.4); /* Black see-through */
   color: white;
   font-weight: bold;
@@ -101,25 +92,33 @@ h4 {
   text-align: center;
 }
 
-/* Main information and summary texts */
 .info-wrapper {
-  padding: 2.5% 7%;
-  background-color: #FFA07A;
+  width: 87%;
+  box-shadow: 0 10px 5px 5px rgba(0,0,0, 0.4);
+  margin: auto;
 }
 
-.about, .course, .research, .personal{
+.about, .course, .research, .personal, .bake{
   text-align: center;
+  padding: 1%;
   font-size: 2rem;
   font-family: 'Montserrat', serif;
-  color: #11999E;
+  color: #f09ae9;
 }
 
 /* Content in summary */
+/* Main information and summary texts */
+
+.Profile {
+  padding: 1.5%;
+  background-color: #FFF;
+}
+
 .description {
   width: 60%;
-  margin: 50px auto;
+  margin: auto;
   text-align: left;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', serif;
   line-height: 2;
 }
 
@@ -130,18 +129,32 @@ h4 {
 }
 
 /* course list content  */
-dt {
-  margin: 1% auto 0;
-}
-
-dd {
+.course-info {
+  width: 45%;
   margin: auto;
-  padding: 1%;
-  width: 60%;
 }
 .course-list {
-    text-align: center;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list-item {
+  font: 200 20px/1.5 "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #ccc;
+  padding: 1.5%;
+}
+.list-item:last-child {
+  border: none;
+}
+.list-item:hover {
+  font-size: 1.6rem;
+}
+
+.academic-section {
+  background-color: #CFFFFE;
+  padding: 2.5%;
+}
 
 /* Images for content in info-wrapper  */
 .icon {
@@ -156,44 +169,64 @@ dd {
   float: right;
 }
 
-/* Research section content  */
-.research-section {
-  margin: 20px auto;
-  text-align: left;
-  font-family: 'Merriweather', serif;
-  line-height: 2;
-}
-.research-info{
-  width: 60%;
-  margin: 40px auto;
-  text-align: left;
-  line-height: 2;
+/* Personal section  */
+.personal-section {
+  padding: 1.5%;
+  background-color: #FFF;
 }
 
 .personal-info {
   width: 60%;
-  margin: 20px auto;
+  margin: auto;
   text-align: left;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', serif;
   line-height: 2;
+}
+
+.baking-section {
+  background-color: #CFFFFE;
+  padding: 2%;
+}
+
+.baking-img {
+  width: 20%;
+  margin: 7%;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 0;
+}
+
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
+.carousel-control-next {
+  filter: invert(100%);
+}
+
+.pie {
+  width: 60%;
 }
 
 /* footer section */
 .foot-wrapper {
-  background-color: #66BFBF;
+  background-color: #292b2c;
+
   text-align: center;
-  padding: 20px 0 12px;
+  padding: 1rem;
 }
 
 .copyright {
   text-align: center;
   font-size: 0.75rem;
   font-family: 'Montserrat', serif;
-  color: black;
+  color: #F7f7F7;
 }
 
 .ico {
-  color: #292b2c;
+  color: #f7f7f7;
   margin: 0 1rem 10px;
 }
 
