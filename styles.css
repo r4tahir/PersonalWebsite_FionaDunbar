@@ -132,7 +132,7 @@ h4 {
   margin-bottom: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 568px) {
   .prof-dunbar {
     clear: left;
     margin-bottom: 20px;
