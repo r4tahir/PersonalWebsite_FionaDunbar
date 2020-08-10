@@ -101,9 +101,9 @@ h4 {
 .about, .course, .research, .personal, .bake, .contact{
   text-align: center;
   padding: 1%;
-  font-size: 2rem;
+  font-size: 2.2em;
   font-family: 'Montserrat', serif;
-  color: #f09ae9;
+  color: #006a71;
 }
 
 /* Content in summary */
@@ -122,10 +122,21 @@ h4 {
   line-height: 2;
 }
 
+.summary-subtitle {
+  font-size: 1.3rem;
+}
+
 /* Professor Dunbar image */
 .prof-dunbar {
-  float: left;
-  margin-right: 20px;
+  float: right;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .prof-dunbar {
+    clear: left;
+    margin-bottom: 20px;
+  }
 }
 
 /* course list content  */
@@ -163,12 +174,6 @@ h4 {
   float: left;
 }
 
-.dog {
-  width: 20%;
-  margin-left: 30px;
-  float: right;
-}
-
 /* Personal section  */
 .personal-section {
   padding: 1.5%;
@@ -197,6 +202,10 @@ h4 {
 .baking-img {
   width: 20%;
   margin: 7%;
+}
+
+.baking-img.sizeUp {
+  width: 35%;
 }
 
 .carousel-item {
