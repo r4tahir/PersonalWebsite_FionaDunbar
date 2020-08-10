@@ -98,7 +98,7 @@ h4 {
   margin: auto;
 }
 
-.about, .course, .research, .personal, .bake{
+.about, .course, .research, .personal, .bake, .contact{
   text-align: center;
   padding: 1%;
   font-size: 2rem;
@@ -234,6 +234,15 @@ h4 {
 .ico {
   color: #f7f7f7;
   margin: 0 1rem 10px;
+}
+
+/* contact-section */
+
+.contact-info {
+  text-align: center;
+  font-family: 'Montserrat', serif;
+  line-height: 2;
+  margin-bottom: 4%;
 }
 
 
