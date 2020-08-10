@@ -183,6 +183,12 @@ h4 {
   line-height: 2;
 }
 
+.personal-img {
+  width: 60%;
+  display: block;
+  margin: 5% auto;
+}
+
 .baking-section {
   background-color: #CFFFFE;
   padding: 2%;
