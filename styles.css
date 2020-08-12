@@ -304,3 +304,15 @@ h4 {
   padding-top: 20px;
   text-align: center;
 }
+
+.title {
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  width: 75%;
+  margin: 2% auto;
+}
