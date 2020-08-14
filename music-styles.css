@@ -1,4 +1,22 @@
 /* ************Music************** */
 .reverb-comment {
-    text-align: center;
+  padding:20px;
+  text-align: center;
   }
+.container{
+  padding:20px;
+  width:auto;
+  height:auto;
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: space-evenly;
+}
+.mixcord{
+    padding:20px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
