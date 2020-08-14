@@ -94,7 +94,7 @@ h4 {
 
 .info-wrapper {
   width: 87%;
-  box-shadow: 0 10px 5px 5px rgba(0,0,0, 0.4);
+  box-shadow: 0 7px 5px 5px rgba(0,0,0, 0.4);
   margin: auto;
 }
 
@@ -194,6 +194,8 @@ h4 {
   margin: 5% auto;
 }
 
+/* baking section  */
+
 .baking-section {
   background-color: #CFFFFE;
   padding: 2%;
@@ -207,6 +209,8 @@ h4 {
 .baking-img.sizeUp {
   width: 35%;
 }
+
+/* Carousel styles  */
 
 .carousel-item {
   text-align: center;
@@ -254,6 +258,38 @@ h4 {
   margin-bottom: 4%;
 }
 
+/************************** */
+/*            CEMC          */
+/************************** */
+
+.cemc-img {
+  width: 30%;
+  padding: 2%;
+}
+
+.cemc-title {
+  text-align: center;
+}
+
+.cemc-info {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  width: 75%;
+  margin: 2% auto;
+}
+
+/* cemc content section  */
+.cemc-content {
+  background-color: #fff;
+  text-align: center;
+  padding: 2% 7%;
+}
+
+/* cemc buttons  */
+.cemc-btns {
+  margin: 1rem 2rem;
+}
 
 /* ************CV************** */
 .sidebar {
@@ -269,7 +305,25 @@ h4 {
   text-align: center;
 }
 
-/* ************Music************** */
-.reverb-comment {
+.title {
   text-align: center;
+}
+
+.main {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  width: 75%;
+  margin: 2% auto;
+}
+
+.content {
+  background-color: #fff;
+  text-align: center;
+  padding: 2% 7%;
+}
+
+/* cemc buttons  */
+.cemc-btns {
+  margin: 1rem 2rem;
 }
