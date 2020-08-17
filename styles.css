@@ -316,6 +316,16 @@ h4 {
   text-align: center;
 }
 
+.main {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  width: 75%;
+  margin: 2% auto;
+}
+
+/* Crowdmark */
+
 .title {
   text-align: center;
 }
