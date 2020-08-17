@@ -1,4 +1,4 @@
-
+//Simple JS code for interactive learn more button on CV page
 
 function revealMessage() {
     document.getElementById("hiddenMessage").style.display = 'block';
