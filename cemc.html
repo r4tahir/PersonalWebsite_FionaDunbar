@@ -15,6 +15,7 @@
   <!-- Awesome Font Linking  -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
 
+  <!-- javascript componants for bootstrap  -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -22,12 +23,16 @@
 
 <body>
 
+<!-- Information and content wrapper  -->
   <div class="info-wrapper">
 
+<!-- top header section  -->
     <section class="title">
 
-      <nav class="navbar navbar-expand-xl navbar-collapse navbar-dark bg-dark">
-        <a class="navbar-brand" href="">Fiona Dunbar</a>
+<!-- navbar using bootstrap  -->
+      <nav class="navbar navbar-expand-xl navbar-collapse navbar-dark bg-dark"> <!-- Make resoponsive navbar collapse at smaller screen sizes-->
+        <a class="navbar-brand" href="index.html">Fiona Dunbar</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,13 +42,13 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="crowdmark.html">Crowdmark</a>
+              <a class="nav-link" href="#">Crowdmark</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cemc.html">CEMC</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="music.html">Music</a>
+              <a class="nav-link" href="#">Music</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cv.html">CV</a>
@@ -52,6 +57,7 @@
         </div>
       </nav>
 
+<!-- CEMC logo  -->
       <div class="cemc-title">
         <img class="cemc-img" src="cemc-logo.png" alt="Center of Mathematics and Extended Learning">
         <p class="cemc-info">
@@ -70,6 +76,7 @@
 
       <p class="cemc-info">Click the buttons to learn more about the Centre for Education in Mathematics and Computing (CEMC)</p>
 
+<!-- links to cemc website information about events and staff  -->
       <a href="https://cemc.uwaterloo.ca/events/tam.html"><button class="btn btn-info btn-lg cemc-btns" type="button" name="button">Event Information</button></a>
       <a href="https://cemc.uwaterloo.ca/about-us/faculty-and-staff.html"><button class="btn btn-info btn-lg cemc-btns" type="button" name="button">Faculty and Staff</button></a>
 

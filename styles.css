@@ -180,6 +180,11 @@ h4 {
   background-color: #FFF;
 }
 
+.describe {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+
 .personal-info {
   width: 60%;
   margin: auto;
@@ -211,10 +216,14 @@ h4 {
 }
 
 /* Carousel styles  */
-
 .carousel-item {
   text-align: center;
   padding: 0;
+}
+
+/* Making the carousel arrows and indicators contrast with the background  */
+.carousel-indicators {
+  filter: invert(100%);
 }
 
 .carousel-control-prev {
@@ -225,6 +234,7 @@ h4 {
   filter: invert(100%);
 }
 
+/* changing image size  */
 .pie {
   width: 60%;
 }
@@ -244,6 +254,7 @@ h4 {
   color: #F7f7F7;
 }
 
+/* footer icons  */
 .ico {
   color: #f7f7f7;
   margin: 0 1rem 10px;
@@ -259,7 +270,7 @@ h4 {
 }
 
 /************************** */
-/*            CEMC          */
+/*        CEMC.html         */
 /************************** */
 
 .cemc-img {
@@ -289,65 +300,4 @@ h4 {
 /* cemc buttons  */
 .cemc-btns {
   margin: 1rem 2rem;
-}
-
-/* ************CV************** */
-.sidebar {
-  height: 100%; /* Full-height: */
-  width: 400px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 1; /* Stay at the top */
-  right: 0;
-  background-color: #f4f6ff; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-  text-align: center;
-}
-
-.title {
-  text-align: center;
-}
-
-.main {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.3rem;
-  width: 75%;
-  margin: 2% auto;
-}
-
-.content {
-  background-color: #fff;
-  text-align: center;
-  padding: 2% 7%;
-}
-
-/* cemc buttons  */
-.cemc-btns {
-  margin: 1rem 2rem;
-}
-
-
-/* ************Music************** */
-.reverb-comment {
-  padding:20px;
-  text-align: center;
-  }
-.container{
-  padding:20px;
-  width:auto;
-  height:auto;
-  display:grid;
-  grid-template-columns: auto auto;
-  grid-row: auto auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-content: space-evenly;
-}
-.mixcord{
-    padding:20px;
-    display:flex;
-    align-items:center;
-    justify-content: center;
 }
