@@ -303,18 +303,6 @@ h4 {
 }
 
 /* ************CV************** */
-.sidebar {
-  height: 100%; /* Full-height: */
-  width: 400px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 1; /* Stay at the top */
-  right: 0;
-  background-color: #f4f6ff; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-  text-align: center;
-}
 
 .main {
   text-align: center;
